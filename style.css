@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
+body {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.nujfcontainer {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nujfcontainer input {
+    margin: 10px;
+    padding: 10px;
+    width: 35vw;
+    height: 25px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(84, 196, 246);
+    font-family: 'Roboto Mono', monospace;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.nujfcontainer button {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(84, 196, 246);
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.cfcontainer {
+    height: 80vh;
+    width: 80vw;
+    border: 2px solid rgb(143, 143, 143);
+    border-radius: 10px;
+    background-color: rgb(255, 218, 236);
+}
+
+.chats {
+    height: 92%;
+    overflow: auto;
+}
+
+.chats::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chats::-webkit-scrollbar-track {
+    margin: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.chats::-webkit-scrollbar-thumb {
+    margin: 5px;
+    border-radius: 10px;
+    background: #c392ff;
+    ;
+}
+
+.chats::-webkit-scrollbar-button {
+    display: none;
+}
+
+.sendmessage {
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendmessage input {
+    margin-right: 10px;
+    width: 60%;
+    outline: none;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.sendmessage button {
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.center {
+    margin: 10px auto;
+    padding: 5px;
+    width: fit-content;
+    clear: both;
+    color: rgb(54, 54, 54);
+    border-radius: 10px;
+    background-color: rgb(222, 250, 232);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.left {
+    margin: 5px 10px;
+    padding: 5px;
+    max-width: 45%;
+    width: fit-content;
+    word-break: break-word;
+    float: left;
+    clear: both;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(224, 176, 255);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.right {
+    margin: 5px 10px;
+    padding: 5px;
+    max-width: 45%;
+    width: fit-content;
+    word-break: break-word;
+    float: right;
+    clear: both;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(170, 170, 170);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+@media screen and (max-width: 800px) {
+    .left {
+        max-width: 90%;
+    }
+
+    .right {
+        max-width: 90%;
+    }
+}
